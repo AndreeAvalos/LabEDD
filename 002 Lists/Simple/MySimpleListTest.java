@@ -3,9 +3,10 @@ public class MySimpleListTest {
 	public static void main(String[] args) {
 		MySimpleList list = new MySimpleList();
 		int a = 0;
-		while(a++ < 10000){
-			list.addAtEnd("Elemento " + a);
+		while(++a < 10){
+			list.addAtBegin("Elemento " + a);
 		}
+		list.tour();
 		System.out.println("En la lista hay: " + list.size + " elementos.");
 	}
 	
