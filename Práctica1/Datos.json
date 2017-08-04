@@ -1,0 +1,97 @@
+{
+	"calendario" : [
+		{
+			"fecha":"2017-09-15",
+			"eventos":[
+				{
+					"titulo":"Himno nacional",
+					"descripcion":"Cantar a todo pulmón el himno más hermoso del mundo mundial",
+					"hora":"06:00",
+					"duracion":"30 min",
+					"lugar":"Mi casa",
+					"participantes":""
+				},
+				{
+					"titulo":"Almuerzo chapín",
+					"descripcion":"Churrascón!!!",
+					"hora":"13:00",
+					"duracion":"2 hrs",
+					"lugar":"Mi casa",
+					"participantes":"aniras,miguelito,simio,mami"
+				},
+				{
+					"titulo":"Antorcha",
+					"descripcion":"Van a ir a correr, yo los acompaño en el carro",
+					"hora":"18:00",
+					"duracion":"4 hrs",
+					"lugar":"Obelisco",
+					"participantes":"aniras,miguelito,simio,guti"
+				}
+			]
+		}
+	],
+	"contactos" : [
+		{
+			"correo" : "aniras.s20s@gmail.com",
+			"nombres" : "Sarina",
+			"apellidos" : "Bolaños",
+			"nickname" : "aniras",
+			"edad" : 22,
+			"telefono" : "3212-3905"
+		},
+		{
+			"correo" : "esvin@gmail.com",
+			"nombres" : "Esvin",
+			"apellidos" : "González",
+			"nickname" : "esvux",
+			"edad" : 26,
+			"telefono" : "5400-9020"
+		},
+		{
+			"correo" : "ger.son@gmail.com",
+			"nombres" : "Gerson",
+			"apellidos" : "Gutiérrez",
+			"nickname" : "guti",
+			"edad" : 23,
+			"telefono" : "5509-8088"
+		},
+		{
+			"correo" : "crsimio@gmail.com",
+			"nombres" : "Josué",
+			"apellidos" : "Lima",
+			"nickname" : "simio",
+			"edad" : 25,
+			"telefono" : "5409-1022"
+		},
+		{
+			"correo" : "lenix@gmail.com",
+			"nombres" : "Lenix Miguel",
+			"apellidos" : "González",
+			"nickname" : "miguelito",
+			"edad" : 25,
+			"telefono" : "5001-0909"
+		},
+		{
+			"correo" : "carmen@gmail.com",
+			"nombres" : "Carmen",
+			"apellidos" : "Monzón",
+			"nickname" : "mami",
+			"edad" : 45,
+			"telefono" : "5122-9002"
+		}
+	],
+	"lugares" : [
+		{
+			"nombre":"USAC",
+			"latitud":23.90,
+			"longitud":-20.91,
+			"direccion":"Ciudad universitaria, zona 12"
+		},
+		{
+			"nombre":"Mi casa",
+			"latitud":22.90,
+			"longitud":-21.10,
+			"direccion":"Montereal II, zona 3 de Mixco"
+		}
+	]
+}
