@@ -9,6 +9,7 @@ public:
     Person(QString firstName, QString lastName, QString career);
     QString getPresentation();
     QString toString();
+    int compare(Person another);
 private:
     QString firstName;
     QString lastName;

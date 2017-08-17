@@ -34,12 +34,78 @@ public:
      */
     void add(T val) {
         MyNode<T> *theNew = new MyNode<T>(val);
-        if(first==nullptr)
+        if(first==nullptr){
+            qInfo() << "Primer elemento de la lista";
             first = theNew;
-        else{
-            theNew->next = first;
-            first = theNew;
+            size++;
+            return;
         }
+
+        //Actualmente solo hay un elemento en la lista
+        if(first->next == nullptr) {
+            //Se compara el valor nuevo a insertar contra el unico valor que existe en la lista
+            int comparison = val.compare(first->getVal());
+
+            //Si el valor nuevo es mayor que el unico valor de la lista,
+            //insertar despues del primero, en otras palabras INSERTAR AL FINAL
+            if(comparison > 0) {
+                qInfo() << "Insertar directamente al final";
+                first->next = theNew;
+                size++;
+                return;
+            }
+
+            //Si el valor nuevo es menor que el unico valor de la lista,
+            //insertar antes del primero, en otras palabras INSERTAR AL INICIO
+            if(comparison < 0) {
+                qInfo() << "Insertar directamente al inicio";
+                theNew->next = first;
+                first = theNew;
+                size++;
+                return;
+            }
+
+            //Si no es mayor, ni tampoco es menor, entonces los elementos son iguales...
+            qInfo() << "Elemento repetido";
+            return;
+        }
+
+        //Nodo auxiliar para recorrer la lista, se busca el punto de insercion correcto
+        //Como la lista esta ordenada la nueva insercion tiene que ser justo antes del
+        //primer elemento que sea "menor" que el valor nuevo.
+        MyNode<T> *aux = first;
+        MyNode<T> *ant = nullptr;
+        while(aux->next != nullptr){
+            int comparison = val.compare(aux->getVal());
+
+            //Es necesario evaluar el siguiente elemento
+            if(comparison > 0) {
+                ant = aux;
+                aux = aux->next;
+                continue;
+            }
+
+            //El nuevo elemento va entre el elemento apuntado por ANT y AUX
+            if(comparison < 0) {
+                if(ant==nullptr) {
+                    qInfo() << "Insertando al inicio, antes de: " << aux->getVal().toString();
+                    theNew->next = first;
+                    first = theNew;
+                } else {
+                    qInfo() << "Insertando entre: " << ant->getVal().toString() << " y " << aux->getVal().toString();
+                    ant->next = theNew;
+                    theNew->next = aux;
+                }
+                size++;
+                return;
+            }
+
+            qInfo() << "Elemento repetido";
+            return;
+        }
+
+        qInfo() << "Insertado al final";
+        aux->next = theNew;
         size++;
     }
 

@@ -17,5 +17,11 @@ QString Person::getPresentation()
 
 QString Person::toString()
 {
-    return this->getPresentation();
+    return this->lastName;
+}
+
+int Person::compare(Person another)
+{
+    int comparision = this->lastName.compare(another.lastName);
+    return comparision;
 }
