@@ -28,6 +28,19 @@
 					"participantes":"aniras,miguelito,simio,guti"
 				}
 			]
+		},
+		{
+			"fecha":"2017-08-26",
+			"eventos":[
+				{
+					"titulo":"Calificación Práctica 1",
+					"descripcion":"Hay que calificar la primera práctica de laboratorio",
+					"hora":"07:00",
+					"duracion":"6 horas",
+					"lugar":"USAC",
+					"participantes":""
+				}
+			]
 		}
 	],
 	"contactos" : [
@@ -75,8 +88,16 @@
 			"correo" : "carmen@gmail.com",
 			"nombres" : "Carmen",
 			"apellidos" : "Monzón",
-			"nickname" : "mami",
-			"edad" : 45,
+			"nickname" : "carmencita",
+			"edad" : 35,
+			"telefono" : "5122-9002"
+		},
+		{
+			"correo" : "raul@gmail.com",
+			"nombres" : "Raul Estuardo",
+			"apellidos" : "Galindo",
+			"nickname" : "rauloo",
+			"edad" : 22,
 			"telefono" : "5122-9002"
 		}
 	],
@@ -92,6 +113,18 @@
 			"latitud":22.90,
 			"longitud":-21.10,
 			"direccion":"Montereal II, zona 3 de Mixco"
+		},
+		{
+			"nombre":"La escuelita",
+			"latitud":22.90,
+			"longitud":-21.10,
+			"direccion":"Montserrat II, zona 4 de Mixco"
+		},
+		{
+			"nombre":"La planchita",
+			"latitud":22.90,
+			"longitud":-21.10,
+			"direccion":"Bulevard Principal, zona 3 de Mixco"
 		}
 	]
 }
