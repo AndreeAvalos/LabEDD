@@ -3,7 +3,7 @@ Para poder utilizar QWebView deben utilizar una versión de Qt inferior a la 5.6
 
 Para Ubuntu y sus derivados los comandos que utilicé fueron:
 ```sh
-# sudo apt-get install libqt5web*
+# apt-get install libqt5web*
 # apt-get install libgstreamer0.10-0
 # apt-get install libgstreamer-plugins-base0.10-0
 ```
