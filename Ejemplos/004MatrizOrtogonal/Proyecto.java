@@ -1,5 +1,0 @@
-class Proyecto extends NodoListaDoble {
-	
-	
-	
-}
